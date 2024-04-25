@@ -1,0 +1,62 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link href="~/css/Inicio/Inicio.css" rel="stylesheet" />
+    <link href="~/css/Layout/Layout.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-5 colHeader">
+            <button class="col btn btnHeader">Para ti</button>
+        </div>
+        <div class="col-6 colHeader">
+            <button class="col btn btnHeader">Siguiendo</button>
+        </div>
+        <div class="col-1 colHeader">
+            <a class="rounded-circle"><i class="bi bi-gear"></i></a>
+        </div>
+    </div>
+    <div class="row contenedorPost">
+        <div class="col-1 divImgPostear">
+            <img class="imgPerfilPostear" src="~/images/Perfil.png" />
+        </div>
+        <div class="col-11">
+            <div class="row contenedorTextAreaPost">
+                <textarea id="inpPost" maxlength="240" placeholder="¡¿Qué está pasando?!"></textarea>
+                <p class="pAdvertencia"><i class="bi bi-globe-americas"></i> Cualquier persona puede responder</p>
+            </div>
+            <div class="row">
+                <div class="col-8 colIconos">
+                    <input type="file" id="inputFile">
+                    <label for="inputFile" class="btn lbliconoImagen"><i class="bi bi-file-image"></i></label>
+                    <button class="btn iconoPost"><i class="bi bi-filetype-gif"></i></button>
+                    <button class="btn iconoPost"><i class="bi bi-card-list"></i></button>
+                    <button class="btn iconoPost"><i class="bi bi-emoji-smile"></i></button>
+                    <button class="btn iconoPost"><i class="bi bi-calendar2-plus"></i></button>
+                    <button class="btn iconoPost"><i class="bi bi-pin-map"></i></button>
+                </div>
+                <div class="col-4 divbtnPostear">
+                    <button class="btn rounded-pill" id="btnPostearInicio">Postear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contenedorPostInicio" class="contenedorPostInicio">
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
+    <script src="~/js/Inicio/PostsModel.js"></script>
+    <script src="~/js/Inicio/PostsInicio.js"></script>
+    <script src="~/js/Inicio/Inicio.js"></script>
+</body>
+</html>

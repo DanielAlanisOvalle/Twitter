@@ -1,0 +1,197 @@
+﻿.btnHeader {
+    color: #706b6b;
+    outline: none;
+}
+
+.iconoPost {
+    color: var(--color-boton);
+    background-color: none;
+    padding: 5px;
+}
+
+.lbliconoImagen {
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    background: none;
+    color: rgb(29, 155, 240);
+    margin: 0;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.btnHeader:hover {
+    color: white;
+    background-color: #212020;
+    text-decoration: underline 5px rgb(29, 155, 240);
+}
+
+.btnHeader:focus, .btnHeader:active, .btnHeader::selection {
+    color: white;
+    text-decoration: underline 5px rgb(29, 155, 240);
+}
+
+.bi-filter-left {
+    transform: rotate(270deg);
+}
+
+.DescripcionPost {
+    margin: 0;
+    font-size: 15px;
+    color: var(--color-texto);
+    padding: 3px;
+}
+
+.contenedorUsuario label {
+    margin: 0;
+    align-content: center;
+}
+
+.contenedorFooterPost {
+    display: flex;
+    color: #878686;
+    flex-wrap: wrap;
+    font-size: 19px;
+    justify-content: space-around;
+}
+
+    .contenedorFooterPost i {
+        padding: 10px 6px 6px 6px;
+        cursor: pointer;
+    }
+
+    .contenedorFooterPost .bi-chat:hover, .bi-filter-left:hover, .bi-bookmark:hover, .bi-upload:hover {
+        color: var(--color-boton);
+        background-color: var(--color-gris-fondo);
+    }
+
+    .contenedorFooterPost .bi-arrow-repeat:hover {
+        color: limegreen;
+        background-color: var(--color-gris-fondo);
+    }
+
+    .contenedorFooterPost .bi-heart:hover {
+        color: #e51e1e;
+        background-color: var(--color-gris-fondo);
+    }
+
+.colHeader {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid #4d4b4b;
+}
+
+.imgPerfilPostear {
+    height: 6vh;
+    width: auto;
+}
+
+#inpPost {
+    width: 100%;
+    min-height: 45px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: var(--color-fondo);
+    border: none;
+    color: white;
+    outline: none;
+    resize: none;
+    font-size: 20px;
+    overflow: visible;
+}
+
+#inputFile {
+    display: none;
+}
+
+.divImgPostear {
+    justify-content: center;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.contenedorPost {
+    border-bottom: 0.5px solid #4d4b4b;
+    padding: 15px 5px 5px 5px;
+}
+
+.pAdvertencia {
+    display: none;
+    color: var(--color-boton);
+    margin: 0;
+    padding: 10px;
+}
+
+.contenedorTextAreaPost {
+    margin-bottom: 5px;
+    border-bottom: 0.5px solid #4d4b4b;
+}
+
+.colIconos {
+    align-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+    .colIconos i {
+        color: rgb(29, 155, 240);
+        font-size: 17px;
+        font-weight: 900;
+    }
+
+.divbtnPostear {
+    text-align: right;
+}
+
+#btnPostearInicio {
+    background-color: rgb(29, 155, 240);
+    color: white;
+}
+
+    #btnPostearInicio:hover {
+        background-color: var(--color-boton-hover);
+    }
+
+.imgPost {
+    border-radius: 15px;
+}
+
+.cardPost {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border-bottom: 0.5px solid #4d4b4b;
+}
+    .cardPost .card-body{
+        padding-bottom:0;
+    }
+
+    .contenedorImagen {
+        padding: 0;
+        justify-content: center;
+    }
+
+#lblUsuario {
+    color: #808080;
+    font-size: 14px;
+}
+
+#lblNombreUsuario {
+    color: var(--color-texto);
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.imgPerfilUsuario {
+    height: 5vh;
+    width: auto;
+    margin: 0 5px 2px 5px;
+}
+
+.contenedorInfoPostUsuario{
+    margin: 10px 0 0 0;
+}

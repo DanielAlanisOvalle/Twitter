@@ -1,0 +1,284 @@
+﻿:root {
+    --color-fondo: #000000;
+    --color-texto: rgba(231,233,234,1.00);
+    --color-boton: rgb(29, 155, 240);
+    --color-boton-hover: #0a85ea;
+    --color-gris-fondo: #212020;
+}
+
+body {
+    background-color: #000000;
+    color: var(--color-texto);
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+
+.bodyLayout {
+    border: 0.5px solid #4d4b4b;
+}
+
+.contenedorLayout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divUsuarioPerfilLista {
+    font-size: 14px;
+    padding: 0;
+    align-content: center;
+    justify-content: center;
+}
+
+.perfilLista {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+    .perfilLista:hover {
+        background-color: var(--color-gris-fondo);
+    }
+
+.imgPerfilLista {
+    height: 6vh;
+    width: auto;
+}
+
+.contenedorListaMenu {
+    padding: 0 30px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: right;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.btnPostear {
+    background-color: rgb(29, 155, 240);
+    color: var(--color-texto);
+}
+
+    .btnPostear:hover {
+        background-color: #0a85ea;
+        color: var(--color-texto);
+    }
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    justify-content: center;
+    align-content: center;
+    padding: 0.9vh;
+}
+
+.ArrobaUsuario {
+    color: #808080;
+}
+
+.liPerfil {
+    margin-top: 5vh;
+}
+
+.textoListaMenu {
+    margin-left: 7px;
+    letter-spacing: 0.2PX;
+}
+
+.linkLayout:hover {
+    background-color: var(--color-gris-fondo);
+    cursor: pointer;
+}
+
+.linkLayout {
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+    .linkLayout i {
+        font-size: 25px;
+        margin-right: 7px;
+    }
+
+.ModoOscuro {
+}
+
+.rowBarraBusqueda {
+    width: 70%;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 5px 0 5px 0;
+    justify-content: left;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    .rowBarraBusqueda label {
+        margin: 0 5px 0 15px;
+        padding: 0;
+    }
+
+.DivBusquedaSeleccionado {
+    background-color: var(--color-fondo);
+    color: var(--color-boton);
+    border: 1px solid var(--color-boton);
+}
+
+.inpBuscarSeleccionado {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    outline: none;
+    border: none;
+}
+
+.DivBusquedaSinSeleccionar {
+    background-color: var(--color-gris-fondo);
+    color: darkgray;
+    padding: 10px;
+}
+
+.inpBuscarSinSeleccionar {
+    background-color: var(--color-gris-fondo);
+    color: var(--color-texto);
+    outline: none;
+    border: none;
+}
+
+.btnSuscribirse {
+    background-color: var(--color-boton);
+    color: var(--color-texto);
+    padding: 5px 15px 5px 15px;
+    width: fit-content;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+}
+
+    .btnSuscribirse:hover {
+        background-color: var(--color-boton-hover);
+        color: var(--color-texto);
+    }
+
+.cardSuscribeteAPremium {
+    width: 70%;
+    background-color: var(--color-fondo);
+    margin: 15px 0 0 10px;
+    padding: 15px;
+    border: 2px solid var(--color-gris-fondo);
+    border-radius: 15px;
+}
+
+.cardQueEstaPasando {
+    width: 70%;
+    background-color: var(--color-fondo);
+    margin: 10px 0 0 10px;
+    padding: 15px;
+    border: 2px solid var(--color-gris-fondo);
+    border-radius: 15px;
+}
+
+.textoSuscribirse {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: lightgray;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.titleQEP {
+    letter-spacing: 0.5px;
+    font-weight: 900;
+    font-size: 21px;
+}
+
+.titleSub {
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 21px;
+}
+
+.DescripcionTendencia {
+    color: var(--color-texto);
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.Tendencia {
+    background-color: var(--color-fondo);
+    padding: 5px 5px 5px 0;
+}
+
+    .Tendencia:hover {
+        background-color: #0a0a0a;
+        cursor: pointer;
+    }
+
+.CantidadPosts, .TituloTipoTendencia {
+    color: #626161;
+    padding: 0;
+    font-size: 12px;
+    margin: 0;
+}
+
+.mostrarMasTendencias {
+    color: var(--color-boton);
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: var(--color-fondo);
+    border: none;
+}
+
+@media(max-width:1024px) {
+    .contenedorBusqueda {
+        display: none;
+    }
+
+    .bodyLayout {
+        border-left: 1px solid darkgray;
+        border-right: none;
+    }
+
+    .textoListaMenu {
+        display: none;
+    }
+
+    a:hover {
+        font-size: 35px;
+    }
+
+    .contenedorListaMenu {
+        font-size: 27px;
+        padding: 0;
+    }
+
+    .btnPostear {
+        font-size: 27px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        padding: 4px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .liPerfil {
+        margin-top: 1vh;
+    }
+
+    .divUsuarioPerfilLista {
+        display: none
+    }
+
+    .perfilLista {
+        justify-content: left;
+        align-items: center;
+    }
+}
