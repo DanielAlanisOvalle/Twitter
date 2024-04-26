@@ -54,50 +54,14 @@
                 <p class="textoSuscribirse">Suscríbete para desbloquear nuevas funciones y, si eres elegible, recibir un pago de cuota de ingresos por anuncios.</p>
                 <button class="btn btn-sm font-weight-bold btnSuscribirse rounded-pill">Suscribirse</button>
             </div>
-            <div class="card row cardQueEstaPasando">
-                <P class="titleQEP">Qué está pasando</P>
-                <div class="ContenedorTendencia">
-                    <div class="Tendencia">
-                        <p id="TituloTipoTendencia" class="TituloTipoTendencia">Deportes - Tendencia</p>
-                        <p id="DescripcionTendencia" class="DescripcionTendencia">Max Verstappen</p>
-                        <p id="CantidadPosts" class="CantidadPosts">50,000 posts</p>
-                    </div>
-                </div>
-                <div class="ContenedorTendencia">
-                    <div class="Tendencia">
-                        <p id="TituloTipoTendencia" class="TituloTipoTendencia">Videojuegos - Tendencia</p>
-                        <p id="DescripcionTendencia" class="DescripcionTendencia">Fallout 76</p>
-                        <p id="CantidadPosts" class="CantidadPosts">5,765 posts</p>
-                    </div>
-                </div>
-                <div class="ContenedorTendencia">
-                    <div class="Tendencia">
-                        <p id="TituloTipoTendencia" class="TituloTipoTendencia">Automovilismo - Tendencia</p>
-                        <p id="DescripcionTendencia" class="DescripcionTendencia">F1</p>
-                        <p id="CantidadPosts" class="CantidadPosts">35,765 posts</p>
-                    </div>
-                </div>
-                <div class="ContenedorTendencia">
-                    <div class="Tendencia">
-                        <p id="TituloTipoTendencia" class="TituloTipoTendencia">Deportes - Tendencia</p>
-                        <p id="DescripcionTendencia" class="DescripcionTendencia">Chelsea</p>
-                        <p id="CantidadPosts" class="CantidadPosts">300,000 posts</p>
-                    </div>
-                </div>
-                <div class="ContenedorTendencia">
-                    <div class="Tendencia">
-                        <p id="TituloTipoTendencia" class="TituloTipoTendencia">Seguridad</p>
-                        <p id="DescripcionTendencia" class="DescripcionTendencia">Tamaulipas</p>
-                        <p id="CantidadPosts" class="CantidadPosts">3,256 posts</p>
-                    </div>
-                </div>
-                <div class="row"><button class="mostrarMasTendencias">Mostrar más</button></div>
+            <div id="cardQueEstaPasando" class="card row cardQueEstaPasando">
             </div>
         </div>
     </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/Layout/Layout.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

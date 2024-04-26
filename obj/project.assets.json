@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lalanis\\Desktop\\Twitter\\Twitter.csproj",
+      "projectUniqueName": "C:\\Users\\lalanis\\Twitter\\Twitter.csproj",
       "projectName": "Twitter",
-      "projectPath": "C:\\Users\\lalanis\\Desktop\\Twitter\\Twitter.csproj",
+      "projectPath": "C:\\Users\\lalanis\\Twitter\\Twitter.csproj",
       "packagesPath": "C:\\Users\\lalanis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lalanis\\Desktop\\Twitter\\obj\\",
+      "outputPath": "C:\\Users\\lalanis\\Twitter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

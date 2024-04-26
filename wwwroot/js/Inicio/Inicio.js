@@ -3,7 +3,7 @@
     const btnPostearInicio = $('#btnPostearInicio');
     const contenedorPostInicio = document.getElementById('contenedorPostInicio');
     const inputFile = document.getElementById('inputFile');
-
+   
     btnPostearInicio.click(function () {
         const textoPost = inpPost.val().trim();
 

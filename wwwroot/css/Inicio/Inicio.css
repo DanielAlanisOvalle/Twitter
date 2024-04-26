@@ -87,6 +87,7 @@
 .imgPerfilPostear {
     height: 6vh;
     width: auto;
+    z-index:999;
 }
 
 #inpPost {
@@ -151,7 +152,7 @@
 #btnPostearInicio {
     background-color: rgb(29, 155, 240);
     color: white;
-}
+}    
 
     #btnPostearInicio:hover {
         background-color: var(--color-boton-hover);
@@ -166,14 +167,15 @@
     color: var(--color-texto);
     border-bottom: 0.5px solid #4d4b4b;
 }
-    .cardPost .card-body{
-        padding-bottom:0;
+
+    .cardPost .card-body {
+        padding-bottom: 0;
     }
 
-    .contenedorImagen {
-        padding: 0;
-        justify-content: center;
-    }
+.contenedorImagen {
+    padding: 0;
+    justify-content: center;
+}
 
 #lblUsuario {
     color: #808080;
@@ -192,6 +194,6 @@
     margin: 0 5px 2px 5px;
 }
 
-.contenedorInfoPostUsuario{
+.contenedorInfoPostUsuario {
     margin: 10px 0 0 0;
 }
