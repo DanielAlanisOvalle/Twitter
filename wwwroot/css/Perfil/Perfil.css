@@ -1,0 +1,125 @@
+﻿.filaVolverAtras i {
+    font-size: 20px;
+    height: 5vh;
+}
+
+    .filaVolverAtras i:hover {
+        cursor: pointer;
+    }
+
+
+.filaVolverAtras {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.divEncabezado img {
+    margin-top: 5vh;
+}
+
+.col-9.col-md-5.col-sm-10.bodyLayout {
+    padding: 0;
+}
+
+.filaInfoPerfil {
+    height: 10vh;
+}
+
+.filabtnEditar {
+    display: flex;
+    height: 5vh;
+}
+
+.filaBtnsPerfil {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 6vh;
+    border-bottom: 1px solid #4d4b4b;
+}
+
+    .filaBtnsPerfil button {
+        color: grey;
+        height: 5vh;
+        flex-grow: 1;
+        flex: 1;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+        .filaBtnsPerfil button:hover {
+            color: grey;
+            background-color: #100f0f;
+        }
+
+.filaBtnsPerfil, .divSeguidores, .descripcionPerfil, .ArrobaUsuario, .divArroba {
+    padding: 0;
+    margin: 0;
+}
+
+.divArroba {
+    padding: 0 0 0 10px;
+}
+
+    .divArroba p {
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+    }
+
+.divDescripcion {
+    margin: 0;
+    padding: 10px;
+}
+
+.descripcionPerfil {
+    justify-content: center;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.pInfoPerfil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: justify;
+    color: grey;
+}
+
+    .pInfoPerfil > span > i {
+        margin-right: 2px;
+    }
+
+
+    .pInfoPerfil > span {
+        margin-left: 2px;
+    }
+
+    .pInfoPerfil a {
+        margin-right: 3px;
+    }
+
+.divDescripcion p {
+    margin: 5px 0 0 0;
+}
+
+.divSeguidores p {
+    color: gray;
+    margin-left: 10px;
+    margin-right: 3px;
+}
+
+span.Num {
+    margin-left: 10px;
+}
+
+
+.divSeguidores span {
+    font-weight: 600;
+}

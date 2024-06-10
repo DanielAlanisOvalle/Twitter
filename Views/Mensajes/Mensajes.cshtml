@@ -1,0 +1,61 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link href="~/css/Mensajes/Mensajes.css" rel="stylesheet" />
+    <link href="~/css/Layout/Layout.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row filaEncabezado">
+        <div class="col-10">Mensajes</div>
+        <div class="col-2 FilaIconos">
+            <i class="bi bi-gear"></i>
+            <i class="bi bi-envelope-plus"></i>
+        </div>
+    </div>
+    <div class="divMensajes">
+        <p class="font-weight-bolder pBienvenido">
+            ¡Te damos la<br />
+            bienvenida a tu<br />
+            bandeja de entrada!
+        </p>
+        <p class="pInvitacion">Envía una frase, comparte posts y mucho más con las conversaciones privadas entre tú y otras personas en X. </p>
+        <p><button class="btn btnEscribir rounded-pill" id="btnAbrirModalMensaje">Escribir un mensaje</button></p>
+    </div>
+    <div class="modal fade" id="ModalMensaje" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="col-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                    </div>
+                    <div class="col-6 divEncabezadoModal">NuevoMensaje</div>
+                    <div class="col-4 divEncabezadoModalbtn"><button class="btn btn-light rounded-pill">Siguiente</button></div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <i class="bi bi-search"></i>
+                        <label class="lblBuscarPpl">Buscar personas</label>
+                    </div>
+                    <div class="row">
+                        <i class="bi bi-people"></i>
+                        <label class="lblCrearGrupo">Crear un grupo</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/js/jquery-3.7.1.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/Mensajes/Mensajes.js"></script>
+</body>
+</html>

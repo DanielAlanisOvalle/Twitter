@@ -87,7 +87,7 @@
 .imgPerfilPostear {
     height: 6vh;
     width: auto;
-    z-index:999;
+    z-index: 999;
 }
 
 #inpPost {
@@ -152,7 +152,7 @@
 #btnPostearInicio {
     background-color: rgb(29, 155, 240);
     color: white;
-}    
+}
 
     #btnPostearInicio:hover {
         background-color: var(--color-boton-hover);

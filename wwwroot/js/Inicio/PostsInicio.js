@@ -3,7 +3,7 @@ let contenedorPostInicio = document.getElementById("contenedorPostInicio");
 
 document.addEventListener('DOMContentLoaded', () => {
     getData();
-    setInterval(getData, 10000);
+    //setInterval(getData, 10000);
 });
 
 function getData() {

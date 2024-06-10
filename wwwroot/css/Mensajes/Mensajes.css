@@ -1,0 +1,72 @@
+﻿body {
+}
+
+.filaEncabezado {
+    font-size: 30px;
+    color: rgba(231,233,234,1.00);
+}
+
+
+.FilaIconos {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.btnEscribir {
+    background-color: var(--color-boton);
+    color: rgba(231,233,234,1.00);
+}
+
+.pBienvenido {
+    font-size: 31px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+    align-content: center;
+}
+
+.divMensajes {
+    padding: 40px 60px 0 60px;
+}
+
+.pInvitacion {
+    color: grey;
+}
+
+.btnEscribir {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 15px 25px;
+    margin-top: 10px;
+    letter-spacing: 0.6px;
+}
+
+.filaEncabezado {
+    padding: 10px;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.divEncabezadoModalbtn {
+    display: contents;
+    justify-content: end;
+    align-content: end;
+}
+
+.divEncabezadoModal {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.modal-header {
+    padding: 0;
+    margin: 0;
+}
+
+.modal {
+    background-color: transparent;
+    color: rgba(231,233,234,1.00);
+}

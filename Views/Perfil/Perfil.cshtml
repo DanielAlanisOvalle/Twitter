@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link href="~/css/Layout/Layout.css" rel="stylesheet" />
+    <link href="~/css/Perfil/Perfil.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row filaVolverAtras pl-4">
+        <i class="p-2 bi bi-arrow-left"></i>
+    </div>
+    <div class="row p-0 m-0 divEncabezado">
+        <img class="img-fluid" src="~/images/Encabezado.jpg" />
+    </div>
+    <div class="row filaInfoPerfil">
+        <div class="col-9"></div>
+        <div class="col-3 pt-2">
+            <button class="rounded-pill btn btn-outline-light">Editar perfil</button>
+        </div>
+    </div>
+    <div class="row ArrobaUsuario">
+        <div class="col-3 divArroba">
+            <p>DanielAl</p>
+            <p>@@DanielAlanís</p>
+        </div>
+        <div class="col-9"></div>
+    </div>
+    <div class="row divDescripcion">
+        <p class="descripcionPerfil">Come join us as we go on the adventure of giving visibility into scammers and how they operate. 
+        ScammerPayback@Night.co (Business ONLY, no investigations)</p>
+        <p class="pInfoPerfil"><span><i class="bi bi-briefcase"></i></span>Publicador de contenido. <span><i class="bi bi-geo-alt"></i></span>United States of America </p>
+        <p class="pInfoPerfil"><span><i class="bi bi-link-45deg"></i></span><a href="https://www.youtube.com/c/scammerpayback">https://www.youtube.com/c/scammerpayback</a><span><i class="bi bi-calendar3"></i></span>Se unió en julio de 2016</p>
+    </div>
+    <div class="row divSeguidores">
+        <p><span style="color:white">131</span> Siguiendo<span class="Num" style="color:white">64,4 mil</span> Seguidores</p>
+    </div>
+    <div class="row filaBtnsPerfil">
+        <button class="btn">Posts</button>
+        <button class="btn">Respuestas</button>
+        <button class="btn">Destacados</button>
+        <button class="btn">Articulos</button>
+        <button class="btn">Fotos y videos</button>
+        <button class="btn">Me gusta</button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"></script>
+    <script src="~/js/Perfil/Perfil.js"></script>
+</body>
+</html>
