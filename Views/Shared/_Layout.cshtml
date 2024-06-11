@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 </head>
 <body>
-
     <div class="row contenedorLayout">
         <div class="col-2 col-md-3 col-sm-2 contenedorListaMenu">
             <ul class="listaMenu">
@@ -52,9 +51,45 @@
             <div class="card row cardSuscribeteAPremium">
                 <h5 class="font-weight-bolder titleSub">Suscríbete a Premium</h5>
                 <p class="textoSuscribirse">Suscríbete para desbloquear nuevas funciones y, si eres elegible, recibir un pago de cuota de ingresos por anuncios.</p>
-                <button class="btn btn-sm font-weight-bold btnSuscribirse rounded-pill">Suscribirse</button>
+                <button id="btnSuscribirse" class="btn btn-sm font-weight-bold btnSuscribirse rounded-pill">Suscribirse</button>
             </div>
             <div id="cardQueEstaPasando" class="card row cardQueEstaPasando">
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalSuscribirse" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="col-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                    </div>
+                    <div class="col-10"></div>
+                </div>
+                <div class="modal-body">
+                    <p class="pQuienEres">¿Quién eres?</p>
+                    <p class="pEligeSuscripcion">Elige una suscripción correcta para ti</p>
+                    <div class="row divCardsSuscribir">
+                        <div class="cardPersona card">
+                            <div class="card-header">Premium</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Persona</h5>
+                                <p class="card-text">Para personas y creadores</p>
+                            </div>
+                        </div>
+                        <div class="cardOrganziacion card">
+                            <div class="card-header">Organizaciones verificadas</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Organización</h5>
+                                <p class="card-text">Para empresas, organismos<br /> gubernamentales y organizaciones<br /> sin fines de lucro</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btnModalSucribirse btn btn-lg btn-light rounded-pill">Suscribirse</button>
+                    </div>
+                    <div class="row"><p class="pMasInfo">Mas información sobre <span class="txtAzul">Premium</span> y <span class="txtAzul">Organizaciones verificadas</span></p></div>
+                </div>
             </div>
         </div>
     </div>

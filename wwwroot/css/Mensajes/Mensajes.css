@@ -61,12 +61,81 @@
     justify-content: center;
     padding: 10px;
 }
+
 .modal-header {
-    padding: 0;
+    padding: 5px;
     margin: 0;
+    align-items: center;
+    border: none;
 }
 
 .modal {
     background-color: transparent;
     color: rgba(231,233,234,1.00);
+}
+
+.modal-header, .modal-body {
+    background-color: black;
+    color: white;
+}
+
+.lblBuscarPpl {
+    color: grey;
+}
+
+.modal-body i, .lblCrearGrupo {
+    color: rgb(29, 155, 240);
+}
+
+.modal-body i {
+    margin-right: 20px;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.btn-close {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+.divEncabezadoModal {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.modal-body .row {
+    border-bottom: 1px solid grey;
+    padding:5px;
+}
+
+.txtMensaje {
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(29, 155, 240);
+}
+
+.modal-dialog {
+    height: 50vh;
+}
+
+.txtMensaje:focus {
+    height: 30vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.divtxtMensaje {
+    padding: 0;
+}
+
+.divCardsSuscribir{
+
 }

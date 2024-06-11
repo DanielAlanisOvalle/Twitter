@@ -282,3 +282,87 @@ li {
         align-items: center;
     }
 }
+
+.modal-header {
+    padding: 5px;
+    margin: 0;
+    align-items: center;
+    border: none;
+}
+
+.modal-header, .modal-body {
+    background-color: black;
+    color: white;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.btn-close {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+
+.divCardsSuscribir {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+}
+
+.cardPersona, .cardOrganziacion {
+    flex: 1;
+    box-sizing: border-box;
+    max-width: 48%;
+    border-radius: 15%;
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    box-shadow:white 10px inset;
+}
+
+.card-header, .card-body {
+    word-wrap: break-word;
+}
+
+.card-header {
+    font-size: 14px;
+    color: grey;
+    padding: 15px 15px 0 15px;
+}
+
+.card-title {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.card-body {
+    padding: 0 15px 0 15px;
+}
+
+.card-text {
+    font-size: 13px;
+    color: grey;
+    padding: 0 0 10px 0;
+}
+
+.cardPersona:hover, .cardOrganziacion:hover {
+    background-color: #212020;
+    color: white;
+    border: 1px solid grey;
+    cursor:pointer;
+}
+
+.cardPersona:focus, .cardOrganziacion:focus {
+    background-color: #212020;
+    color: white;
+    border: 1px solid var(--color-boton);
+    cursor: pointer;
+}
+

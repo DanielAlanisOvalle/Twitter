@@ -321,6 +321,11 @@
 
     ActualizarTendencias();
     setInterval(ActualizarTendencias, 8000)
+
+    let ModalSuscribirse = $('#ModalSuscribirse');
+    let btnSuscribirse = $('#btnSuscribirse');
+
+    btnSuscribirse.on('click', () => { ModalSuscribirse.modal('show') });
 });
 
 
