@@ -320,12 +320,13 @@
 
 
         let Titulo = '<P class="titleQEP">Qué está pasando</P>';
-        let Footer = '<div class="row"><button class="mostrarMasTendencias">Mostrar más</button></div>';
+        let Footer = '<div class="row"><button id="btnActualizarTendencias" class="mostrarMasTendencias">Mostrar más</button></div>';
         cardQueEstaPasando.innerHTML += Titulo + Tendencia + Footer;
     }
 
     ActualizarTendencias();
     setInterval(ActualizarTendencias, 8000);
+    $('#btnActualizarTendencias').on('click', () => { ActualizarTendencias() });
     btnNuevoPostlayout.on('click', () => { ModalNuevoPost.modal('show') });
     btnSuscribirse.on('click', () => { ModalSuscribirse.modal('show') });
 });
