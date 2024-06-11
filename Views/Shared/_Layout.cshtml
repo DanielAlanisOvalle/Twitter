@@ -25,7 +25,7 @@
                 <li><a onclick="location.href='@Url.Action("Extras", "Extras")'" class="rounded-pill linkLayout"><i class="bi bi-twitter-x"></i><span class="textoListaMenu"> Premium</span></a></li>
                 <li><a onclick="location.href='@Url.Action("Perfil", "Perfil")'" class="rounded-pill linkLayout"><i class="bi bi-person"></i><span class="textoListaMenu"> Perfil</span></a></li>
                 <li><a onclick="location.href='@Url.Action("Extras", "Extras")'" class="rounded-pill linkLayout"><i class="bi bi-three-dots"></i><span class="textoListaMenu"> Más opciones</span></a></li>
-                <li><button class="col btn rounded-pill btnPostear"><i class="bi bi-feather"></i><span class="textoListaMenu"> Postear</span></button></li>
+                <li><button id="btnNuevoPostlayout" class="col btn rounded-pill btnPostear"><i class="bi bi-feather"></i><span class="textoListaMenu"> Postear</span></button></li>
                 <li class="liPerfil">
                     <div class="row rounded-pill perfilLista">
                         <div class="col-12 col-md-4 divimgPerfilLista">
@@ -68,27 +68,63 @@
                 </div>
                 <div class="modal-body">
                     <p class="pQuienEres">¿Quién eres?</p>
-                    <p class="pEligeSuscripcion">Elige una suscripción correcta para ti</p>
+                    <p class="pEligeSuscripcion">Elige una suscripción correcta para ti:</p>
                     <div class="row divCardsSuscribir">
                         <div class="cardPersona card">
-                            <div class="card-header">Premium</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Persona</h5>
-                                <p class="card-text">Para personas y creadores</p>
-                            </div>
+                            <p class="card-header">Premium</p>
+                            <h5 class="card-title">Persona</h5>
+                            <p class="card-text">Para personas y creadores</p>
                         </div>
-                        <div class="cardOrganziacion card">
-                            <div class="card-header">Organizaciones verificadas</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Organización</h5>
-                                <p class="card-text">Para empresas, organismos<br /> gubernamentales y organizaciones<br /> sin fines de lucro</p>
-                            </div>
+                        <div class="cardOrganizacion card">
+                            <p class="card-header">Organizaciones verificadas</p>
+                            <h5 class="card-title">Organización</h5>
+                            <p class="card-text">Para empresas, organismos<br /> gubernamentales y organizaciones<br /> sin fines de lucro</p>
                         </div>
                     </div>
                     <div class="row">
                         <button class="btnModalSucribirse btn btn-lg btn-light rounded-pill">Suscribirse</button>
                     </div>
-                    <div class="row"><p class="pMasInfo">Mas información sobre <span class="txtAzul">Premium</span> y <span class="txtAzul">Organizaciones verificadas</span></p></div>
+                    <p class="pMasInfo">Mas información sobre <span class="txtAzul">Premium</span> y <span class="txtAzul">Organizaciones verificadas</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalNuevoPost" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="col-2">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">x</button>
+                    </div>
+                    <div class="col-6"></div>
+                    <div class="col-4"><p class="pBorradores">Borradores</p></div>
+                </div>
+                <div class="modal-body">
+                    <div class="row contenedorPost">
+                        <div class="col-2 col-md-1 col-sm-2 divImgPostear">
+                            <img class="imgPerfilPostear img-fluid"  src="~/images/Perfil.png" />
+                        </div>
+                        <div class="col-10 col-md-11 col-sm-10">
+                            <div class="row contenedorTextAreaPost">
+                                <textarea id="inpPost" maxlength="240" placeholder="¡¿Qué está pasando?!"></textarea>
+                                <p class="pAdvertencia"><i class="bi bi-globe-americas"></i> Cualquier persona puede responder</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-8 colIconos">
+                                    <input type="file" id="inputFile">
+                                    <label for="inputFile" class="btn lbliconoImagen"><i class="bi bi-file-image"></i></label>
+                                    <button class="btn iconoPost"><i class="bi bi-filetype-gif"></i></button>
+                                    <button class="btn iconoPost"><i class="bi bi-card-list"></i></button>
+                                    <button class="btn iconoPost"><i class="bi bi-emoji-smile"></i></button>
+                                    <button class="btn iconoPost"><i class="bi bi-calendar2-plus"></i></button>
+                                    <button class="btn iconoPost"><i class="bi bi-pin-map"></i></button>
+                                </div>
+                                <div class="col-4 divbtnPostear">
+                                    <button class="btn rounded-pill" id="btnPostearInicio">Postear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

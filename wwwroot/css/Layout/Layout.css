@@ -313,15 +313,17 @@ li {
     padding: 15px;
 }
 
-.cardPersona, .cardOrganziacion {
+.cardPersona, .cardOrganizacion {
     flex: 1;
     box-sizing: border-box;
-    max-width: 48%;
+    max-width: 50%;
     border-radius: 15%;
     background-color: black;
     color: white;
     border: 1px solid grey;
-    box-shadow:white 10px inset;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2), 0 6px 20px rgba(128, 128, 128, 0.19);
+    padding: 10px;
+    justify-content: center;
 }
 
 .card-header, .card-body {
@@ -331,7 +333,7 @@ li {
 .card-header {
     font-size: 14px;
     color: grey;
-    padding: 15px 15px 0 15px;
+    padding: 0;
 }
 
 .card-title {
@@ -342,27 +344,60 @@ li {
     margin: 0;
 }
 
-.card-body {
-    padding: 0 15px 0 15px;
-}
-
 .card-text {
-    font-size: 13px;
+    font-size: 11px;
     color: grey;
     padding: 0 0 10px 0;
 }
 
-.cardPersona:hover, .cardOrganziacion:hover {
-    background-color: #212020;
-    color: white;
-    border: 1px solid grey;
-    cursor:pointer;
-}
-
-.cardPersona:focus, .cardOrganziacion:focus {
+.cardPersona:hover, .cardOrganizacion:hover {
     background-color: #212020;
     color: white;
     border: 1px solid var(--color-boton);
     cursor: pointer;
 }
 
+.cardPersona:active, .cardPersona:focus, .cardOrganizacion:active, .cardOrganizacion:focus {
+    background-color: #212020;
+    color: white;
+    border: 1px solid var(--color-boton);
+    cursor: pointer;
+}
+
+.pQuienEres {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+
+.pEligeSuscripcion {
+    text-align: center;
+}
+
+.btnModalSucribirse {
+    width: 100%;
+    margin: 10px 0 20px 0;
+}
+
+.txtAzul {
+    color: var(--color-boton);
+}
+
+    .txtAzul:hover {
+        text-decoration-line: underline;
+        text-decoration-color: var(--color-boton);
+        cursor: pointer;
+    }
+
+.pMasInfo {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.pBorradores {
+    margin: 0;
+    color: var(--color-boton);
+}

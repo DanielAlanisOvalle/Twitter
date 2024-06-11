@@ -1,6 +1,11 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
     let cardQueEstaPasando = document.getElementById('cardQueEstaPasando');
     let Tendencia;
+    let ModalNuevoPost = $('#ModalNuevoPost');
+    const btnNuevoPostlayout = $('#btnNuevoPostlayout');
+    let ModalSuscribirse = $('#ModalSuscribirse');
+    let btnSuscribirse = $('#btnSuscribirse');
+
     const tendenciasTwitter = [
         { nombre: "F1", posts: 5000, tipo: "Deportes - Tendencia" },
         { nombre: "Max Verstappen", posts: 3000, tipo: "Deportes - Tendencia" },
@@ -316,15 +321,12 @@
 
         let Titulo = '<P class="titleQEP">Qué está pasando</P>';
         let Footer = '<div class="row"><button class="mostrarMasTendencias">Mostrar más</button></div>';
-        cardQueEstaPasando.innerHTML += Titulo + Tendencia + Footer;       
+        cardQueEstaPasando.innerHTML += Titulo + Tendencia + Footer;
     }
 
     ActualizarTendencias();
-    setInterval(ActualizarTendencias, 8000)
-
-    let ModalSuscribirse = $('#ModalSuscribirse');
-    let btnSuscribirse = $('#btnSuscribirse');
-
+    setInterval(ActualizarTendencias, 8000);
+    btnNuevoPostlayout.on('click', () => { ModalNuevoPost.modal('show') });
     btnSuscribirse.on('click', () => { ModalSuscribirse.modal('show') });
 });
 
