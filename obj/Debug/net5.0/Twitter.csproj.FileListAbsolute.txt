@@ -72,3 +72,4 @@ C:\Users\lalanis\Twitter\obj\Debug\net5.0\Razor\Views\Perfil\Perfil.cshtml.g.cs
 C:\Users\lalanis\Twitter\obj\Debug\net5.0\Razor\Views\Guardados\Guardados.cshtml.g.cs
 C:\Users\lalanis\Twitter\obj\Debug\net5.0\Razor\Views\Mensajes\Mensajes.cshtml.g.cs
 C:\Users\lalanis\Twitter\obj\Debug\net5.0\Razor\Views\Extras\Extras.cshtml.g.cs
+C:\Users\lalanis\Twitter\obj\Debug\net5.0\Razor\Views\Explorar\Explorar.cshtml.g.cs

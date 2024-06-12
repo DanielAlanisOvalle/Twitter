@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - Twitter</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/Inicio/Inicio.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="~/css/Layout/Layout.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
@@ -16,7 +17,7 @@
             <ul class="listaMenu">
                 <li><a onclick="location.href='@Url.Action("Inicio", "Inicio")'" class="rounded-pill linkLayout"><i class="bi bi-twitter-x"></i></a></li>
                 <li><a onclick="location.href='@Url.Action("Inicio", "Inicio")'" class="rounded-pill linkLayout"><i class="bi bi-house-door-fill"></i><span class="textoListaMenu"> Inicio</span></a></li>
-                <li><a onclick="location.href='@Url.Action("Extras", "Extras")'" class="rounded-pill linkLayout"><i class="bi bi-search"></i><span class="textoListaMenu"> Explorar</span></a></li>
+                <li><a onclick="location.href='@Url.Action("Explorar", "Explorar")'" class="rounded-pill linkLayout"><i class="bi bi-search"></i><span class="textoListaMenu"> Explorar</span></a></li>
                 <li><a onclick="location.href='@Url.Action("Extras", "Extras")'" class="rounded-pill linkLayout"><i class="bi bi-bell"></i><span class="textoListaMenu"> Notificaciones</span></a></li>
                 <li><a onclick="location.href='@Url.Action("Mensajes", "Mensajes")'" class="rounded-pill linkLayout"><i class="bi bi-envelope"></i><span class="textoListaMenu"> Mensajes</span></a></li>
                 <li><a onclick="location.href='@Url.Action("Extras", "Extras")'" class="rounded-pill linkLayout"><i class="bi bi-file-text"></i><span class="textoListaMenu"> Listas</span></a></li>

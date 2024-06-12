@@ -1,0 +1,22 @@
+﻿.bodyLayout {
+    padding: 0;
+    margin: 0;
+}
+
+.TendenciaCreada {
+    padding: 10px;
+}
+
+    .TendenciaCreada p {
+        margin: 0;
+    }
+
+#pEncabezadoTendencia, .p3puntos, #pcantidadDePosts {
+    color: grey;
+    font-size: 15px;
+}
+
+#PTendencia {
+    font-size: 17px;
+    font-weight: 600;
+}
