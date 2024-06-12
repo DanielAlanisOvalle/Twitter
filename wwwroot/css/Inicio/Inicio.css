@@ -3,6 +3,17 @@
     outline: none;
 }
 
+    .btnHeader:hover {
+        color: white;
+        background-color: #212020;
+        text-decoration: underline 5px rgb(29, 155, 240);
+    }
+
+    .btnHeader:focus, .btnHeader:active, .btnHeader::selection {
+        color: white;
+        text-decoration: underline 5px rgb(29, 155, 240);
+    }
+
 .iconoPost {
     color: var(--color-boton);
     background-color: none;
@@ -18,17 +29,6 @@
     margin: 0;
     padding: 5px;
     margin-left: 10px;
-}
-
-.btnHeader:hover {
-    color: white;
-    background-color: #212020;
-    text-decoration: underline 5px rgb(29, 155, 240);
-}
-
-.btnHeader:focus, .btnHeader:active, .btnHeader::selection {
-    color: white;
-    text-decoration: underline 5px rgb(29, 155, 240);
 }
 
 .bi-filter-left {

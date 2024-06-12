@@ -108,8 +108,7 @@
 }
 
 .modal-body .row {
-/*    border-bottom: 1px solid grey;
-*/    padding:5px;
+    padding: 5px;
 }
 
 .txtMensaje {
@@ -136,6 +135,5 @@
     padding: 0;
 }
 
-.divCardsSuscribir{
-
+.divCardsSuscribir {
 }

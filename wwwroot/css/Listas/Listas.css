@@ -1,0 +1,17 @@
+﻿
+.filaEncabezado {
+    font-size: 21px;
+    color: rgba(231,233,234,1.00);
+    font-weight: 600;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+}
+
+
+.pListas{
+    font-size:17px;
+    color:grey;
+    text-align:center;
+    padding: 40px 0 25px 0;
+    margin:0;
+}
